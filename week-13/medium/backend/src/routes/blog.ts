@@ -26,8 +26,6 @@ blogRouter.use("/*", async (c,next)=>{
         return c.json({message: "You are not logged in"})
     }
 })
-    
-
 
 blogRouter.post('/', async (c)=>{
     const prisma = new PrismaClient({
