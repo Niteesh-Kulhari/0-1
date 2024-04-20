@@ -1,4 +1,4 @@
-import { Link, Navigate, useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { ChangeEvent, useState } from "react";
 import { SignupInput } from "@niteesh96/medium-common-updated";
 import axios from "axios";
