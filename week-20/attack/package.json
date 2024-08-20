@@ -1,5 +1,5 @@
 {
-  "name": "week-19-2",
+  "name": "attack",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -8,5 +8,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "axios": "^1.7.4",
+    "express": "^4.19.2"
+  }
 }
