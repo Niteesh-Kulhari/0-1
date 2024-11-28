@@ -33,5 +33,5 @@ const server = new grpc.Server();
 
 server.addService((personProto.AddressBookService as ServiceClientConstructor).service, { addPerson: addPerson });
 server.bindAsync('0.0.0.0:50051', grpc.ServerCredentials.createInsecure(), () => {
-    server.start();
+    server.start(); 
 });
