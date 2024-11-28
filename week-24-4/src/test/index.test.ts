@@ -1,10 +1,12 @@
-import { describe, expect, it, test } from "vitest";
+import { describe, expect, it, test, vi } from "vitest";
 import request from "supertest";
 import { app } from "../index";
 
-test("true === true", () => {
-  expect(true).toBe(true);
-});
+// Mocking Db calls
+vi.mock('../db', () => ({
+  prismaClient:{sum:{create:vi.fn()}}
+}))
+
 
 describe("POST/sum", () => {
   it("Should return sum of two numbers", async () => {
