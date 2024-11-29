@@ -3,9 +3,7 @@ import request from "supertest";
 import { app } from "../index";
 
 // Mocking Db calls
-vi.mock('../db', () => ({
-  prismaClient:{sum:{create:vi.fn()}}
-}))
+vi.mock('../db')
 
 
 describe("POST/sum", () => {
